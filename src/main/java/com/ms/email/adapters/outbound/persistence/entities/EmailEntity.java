@@ -1,4 +1,4 @@
-package com.ms.email.models;
+package com.ms.email.adapters.outbound.persistence.entities;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
@@ -11,14 +11,14 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import com.ms.email.enums.StatusEmail;
+import com.ms.email.application.domain.enums.StatusEmail;
 
 import lombok.Data;
 
 @Data
 @Entity
 @Table(name = "TB_EMAIL")
-public class EmailModel implements Serializable {
+public class EmailEntity implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
